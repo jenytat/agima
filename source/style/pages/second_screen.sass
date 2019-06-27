@@ -1,0 +1,477 @@
+$padding-for-top: 50px
+$main-font: "Open Sans", Arimo
+$title-font: "Montserrat", Cinzel
+$main-color: #FF7C3F
+$slide-4-color: #FF8D2E
+$slide-6-color: #5278FF
+$slide-8-color: #23BF79
+$slide-10-color: #6952C5
+$button-color: #fff
+$text-color: #333333
+$push-color: #E5E5E5
+$items-slider-color: #525E8A
+$item-slider-active-color: #3D64F0
+body
+    font-family: $main-font
+    font-size: 16px
+h2
+    position: relative
+    margin: 0
+    color: $button-color
+    font-family: $title-font
+    font-size: 44px
+    line-height: 130%
+    text-align: center
+    width: 701px
+    z-index: 2
+    &::after
+        position: absolute
+        top: 50%
+        left: 50%
+        margin-top: -165px
+        margin-left: -119px
+        content: ''
+        background: url(../images/background/main-screen.svg)
+        width: 239px
+        height: 330px
+        z-index: -1
+h3
+    color: $text-color
+    margin: 0 0 23px 0
+    font-family: $title-font
+    font-size: 36px
+    line-height: 130%
+    font-weight: 600
+    width: 50%
+p
+    color: $text-color
+    font-size: 18px
+    line-height: 160%
+    margin: 0
+aside
+    width: 24.3%
+ul
+    margin: 0
+    padding: 0
+    list-style: none
+    color: $items-slider-color
+li
+    margin-bottom: 26px
+    display: flex
+    &:hover
+        cursor: pointer
+.container
+    width: 89.59%
+    margin: 0 auto
+.header
+    background: $main-color
+    padding-top: $padding-for-top
+    z-index: 3
+.header__container
+    display: flex
+    justify-content: flex-start
+.logo svg
+    margin-right: 41px
+.header__button
+    border: none
+    padding: 13px 63px
+    border-radius: 100px
+    text-decoration: none
+    line-height: 22px
+.button
+    background: $button-color
+    box-shadow: 0px 4px 10px rgba($button-color, 0.2)
+    color: $text-color
+    &:hover
+        cursor: pointer
+        transition: all .7s
+        box-shadow: 0px 0px 20px 5px rgba($button-color, 0.7)
+.header__hamb
+    position: relative
+    background: transparent
+    border: none
+    width: 40px
+    height: 15px
+    margin-left: auto
+    &::before
+        position: absolute
+        content: ''
+        width: 40px
+        height: 4px
+        border-radius: 1px
+        background: $button-color
+        top: 0
+        right: 0
+    &::after
+        position: absolute
+        content: ''
+        width: 30px
+        height: 4px
+        border-radius: 1px
+        background: $button-color
+        bottom: 0
+        right: 0
+.main-block
+    background: $main-color
+.main-block svg 
+    position: absolute
+    bottom: -25px
+    &:nth-child(4)
+        display: none
+.main-block path
+    fill: $push-color
+.main-block a
+    position: absolute
+    content: ''
+    width: 21px
+    height: 31px
+    left: 50%
+    margin-left: -10px
+    bottom: 123px
+    background: url(../images/icon/mouse-white.svg)
+    animation-name: floating
+    animation-duration: 1.3s
+    animation-iteration-count: infinite
+    &::after
+        position: absolute
+        content: ''
+        left: 50%
+        margin-left: -1px
+        top: 45px
+        width: 2px
+        height: 49px
+        background: $button-color
+@keyframes floating
+    0%
+        transform: translateY(0%)
+    50%
+        transform: translateY(25%)
+    100%
+        transform: translateY(0%)
+.main-block__container
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 90vh 
+.slider
+    background: $push-color
+.slider-2
+    background: $main-color
+.slider-4
+    background: $slide-4-color
+.slider-6
+    background: $slide-6-color
+.slider-8
+    background: $slide-8-color
+.slider-10
+    background: $slide-10-color
+    background-image: url(../images/content/slider/slide-10.svg)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 100%
+    height: 884px
+.slider__container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-top: 88px
+.slider-10 .slider__container
+    height: 884px
+.number-gray
+    color: $text-color
+    font-weight: 700
+.list
+    width: 90%
+li span:first-child
+    margin-right: 37px
+    font-weight: 700
+    display: flex
+    align-items: center
+    justify-content: center
+.active
+    font-size: 24px
+    line-height: 33px
+    font-weight: 900
+    position: relative
+    &::before
+        position: absolute
+        content: ''
+        width: 81px
+        height: 2px
+        top: 50%
+        left: -105px
+        margin-top: -1px
+        background: $button-color
+.active-blue
+    color: $item-slider-active-color
+    &::before
+        background: $item-slider-active-color
+.second-link
+    font-size: 20px
+    margin-left: 10px
+    line-height: 27px
+    opacity: 0.9
+.third-link
+    font-size: 16px
+    margin-left: 25px
+    line-height: 22px
+    opacity: 0.6
+.last-link
+    font-size: 12px
+    margin-left: 40px
+    line-height: 16px
+    opacity: 0.3
+.text-white
+    color: $button-color
+.slider__content
+    display: flex
+    align-items: center
+.slider__wrap
+    width: 75.7%
+    display: flex
+    justify-content: space-between
+    align-items: center
+.slider__img 
+    width: 727px
+    height: 100%
+.slider__text
+    width: 420px
+    padding-left: 10px
+.big-title
+    width: 100%
+.footer
+    width: 100%
+    padding: 33px 0 50px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+.footer__notice
+    display: flex
+    align-items: center
+.footer__number
+    width: 67px
+    height: 67px
+    border: 1px dashed #353535
+    border-radius: 50%
+    box-sizing: border-box
+    color: #353535
+    margin-right: 20px
+    font-size: 21px
+    display: flex
+    justify-content: center
+    align-items: center
+    &--big
+        font-size: 28px
+    &--small
+        margin-top: 4px
+.footer__text
+    color: #353535
+    font-size: 14px
+    line-height: 19px
+    width: 209px
+.footer__img
+    position: relative
+    margin-left: 20px
+    &::after
+        content: ''
+        position: absolute
+        background: $item-slider-active-color
+        border-radius: 2px
+        left: 50%
+        top: 51px
+        margin-left: -1px
+        height: 50px
+        width: 2px
+.footer__feedback a
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-family: $title-font
+    font-weight: 500
+    color: $item-slider-active-color
+    text-decoration: none
+.footer__img rect, .footer__img path
+    stroke: $item-slider-active-color
+.footer__img svg
+    &:nth-child(2)
+        display: none
+@media (min-width: 320px) and (max-width: 1366px)
+    h3, p
+        text-align: center
+    .main-block a
+        width: 39.56px
+        height: 54px
+        bottom: 110px
+        margin-left: -20px
+        background: url(../images/icon/hand-white.svg)
+    h3
+        margin-top: 52px
+        width: 100%
+    p
+        margin-bottom: 67px
+    .main-block a
+        &::after
+            display: none
+    .main-block svg
+        &:nth-child(3)
+            display: none
+        &:nth-child(4)
+            display: block
+            position: absolute
+            bottom: -33px
+    .slider__wrap
+        flex-direction: column
+    .slider__text
+        display: flex
+        align-items: center
+        flex-direction: column
+    .second-link, .third-link, .last-link
+        margin-left: 0
+@media (min-width: 320px) and (max-width: 767px)
+    h2
+        font-size: 24px
+        line-height: 29px
+        &::after
+            width: 169px
+            height: 234px
+            margin-top: -128px
+            margin-left: -84px
+            background-size: cover
+    h3
+        font-size: 24px
+        margin: 33px 0 15px 0
+    p
+        font-size: 14px
+    aside
+        width: 100%
+        display: flex
+        justify-content: flex-end
+    ul
+        width: 50%
+        display: flex
+        justify-content: space-between
+    li
+        align-items: center
+        &:nth-child(4)
+            display: flex
+    li span:first-child
+        margin-right: 0
+    li span:last-child
+        display: none
+    .header__container svg
+        width: 195.89px
+        height: 15px
+    .header__button
+        display: none
+    .header__hamb
+        &::before
+            width: 30px
+        &::after
+            width: 22px
+    .main-block svg
+        &:nth-child(4)
+            bottom: -17px
+    .slider__container
+        flex-direction: column-reverse
+    .slider__wrap img
+        width: 279px
+        height: 256px
+    .slider__text
+        width: 320px
+        padding-left: 0
+    .list
+        width: 85%
+    .active
+        font-size: 20px
+        &::before
+            content: ''
+            background: url(../images/icon/swipe.svg)
+            width: 36px
+            height: 36px
+            left: 0
+            top: -46px
+            margin-left: -10px
+    .slider-2 ul
+        width: 66%
+    .slider-4 ul
+        width: 100%
+    .slider-4 li
+        width: 20%
+    .slider-9 ul
+        width: 100%
+    .slider-9
+        justify-content: flex-start
+    .slider-9 li
+        &:last-child
+            display: block
+        &:first-child
+            display: none
+    .footer
+        display: none
+@media (min-width: 768px) and (max-width: 1366px)
+    ul
+        display: flex
+        justify-content: space-between
+        width: 62%
+    li
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        &:last-child
+            display: none
+    .container
+        width: 94%
+    .slider__container
+        flex-direction: column
+    .slider__wrap img
+        width: 640px
+        height: 586.41px
+    .slider__container aside
+        width: 100%
+        order: 1
+        display: flex
+        justify-content: flex-end
+    .slider-9 aside
+        justify-content: flex-start
+    .slider-9 li
+        &:last-child
+            display: block
+        &:first-child
+            display: none
+    .slider-11 li
+        &:first-child
+            display: block
+        &:last-child
+            display: block
+    li span:first-child
+        margin: 0 0 13px 0
+    .slider-2 ul
+        width: 79%
+    .slider-4 ul,.slider-6 ul,.slider-8 ul, .slider-list
+        width: 100%
+    .slider-4 li, .slider-6 li, .slider-8 li, .slider-list li
+        width: 20%
+        &:first-child
+            display: none
+    .slider-9 ul
+        width: 80%
+    .active
+        &::before
+            height: 34px
+            width: 2px
+            top: -36px
+            left: 50%
+    .footer
+        padding-bottom: 30px
+    .footer__feedback a
+        margin-right: 33px
+    .footer__img
+        &::after
+            display: none
+    .footer__img svg
+        &:nth-child(1)
+            display: none
+        &:nth-child(2)
+            display: block
